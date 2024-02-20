@@ -30,11 +30,11 @@ spec:
                   name: app-secret
                   key: db-pass
       nodeSelector:
-        zone: us-east-1a
+        zone: us-east-1b
       volumes:
         - name: vpro-db-data
           awsElasticBlockStore:
-            volumeID: vol-0e98ab7be8a2f34cb
+            volumeID: vol-0200038a52044c231
             fsType: ext4
       initContainers:
         - name: busybox
@@ -43,5 +43,3 @@ spec:
           volumeMounts:
             - name: vpro-db-data
               mountPath: /var/lib/mysql
-
-
