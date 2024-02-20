@@ -23,7 +23,7 @@ spec:
       initContainers:
         - name: init-mydb
           image: busybox
-          command: ['sleep','1200']
+          command: ['sleep','600']
         - name: init-memcache
           image: busybox
-          command: ['sleep','1200']
+          command: ['sleep','300']
