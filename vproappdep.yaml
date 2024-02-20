@@ -9,7 +9,7 @@ spec:
   selector:
     matchLabels:
       app: vproapp
-  : template:
+  template:
     metadata:
       labels:
         app: vproapp
